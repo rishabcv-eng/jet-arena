@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.rishabcv.jetarena'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.rishabcv.jetarena"
+        minSdk 23                 // Android 6.0 and up
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            // debuggable build signing is enough for sharing with friends;
+            // Android Studio's "Build APK" produces an installable file
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // none: the app is a WebView around the bundled game
+}

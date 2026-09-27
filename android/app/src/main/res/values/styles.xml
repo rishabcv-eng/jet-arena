@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- full-bleed dark theme with no title bar, matching the game background -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/arena_bg</item>
+        <item name="android:windowContentTransitions">false</item>
+    </style>
+</resources>

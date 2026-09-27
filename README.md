@@ -59,6 +59,18 @@ manifest.webmanifest  PWA manifest
 icons/                app icons
 ```
 
+## Android app (APK)
+
+[`android/`](android) is a complete Android Studio project that wraps the game
+in a full-screen WebView, with the whole game bundled inside the app — so it
+runs with **no internet and no server** for solo play and Survival.
+
+Open that folder in Android Studio → **Build → Build APK(s)** → share
+`app-debug.apk` with your friends. Full steps: [android/README.md](android/README.md).
+
+For playing together, one computer still runs `node server.js`; in the app each
+player taps **SERVER**, types that computer's address, then **JOIN LAN**.
+
 ## Play solo
 
 Double-click `index.html`. That's it.
